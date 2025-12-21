@@ -6,16 +6,13 @@ const TopHeader = () => {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* LEFT: Logo / Name */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl font-bold text-emerald-600">
               Propert<span className="text-gray-900">Finderr</span>
             </span>
           </Link>
 
-          {/* CENTER: Navigation (Desktop) */}
-
-          {/* RIGHT: CTA */}
+          
           <div className="flex items-center gap-3">
             <Link
               to="/contact"

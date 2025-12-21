@@ -7,18 +7,29 @@ export const ThemeContext = ({ children }) => {
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [filteredProperties, setFilteredProperties] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/aftab-08khan/UAE_Rental_API/refs/heads/main/uae_properties.json"
-    )
-      .then((res) => {
+    const fetchProperties = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch(
+          "https://raw.githubusercontent.com/aftab-08khan/UAE_Rental_API/refs/heads/main/uae_properties.json"
+        );
+
         if (!res.ok) throw new Error("Failed to fetch properties");
-        return res.json();
-      })
-      .then(setProperties)
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
+
+        const data = await res.json();
+
+        setProperties(data);
+        setFilteredProperties(data); // ✅ important
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProperties();
   }, []);
 
   const getPropertyById = (id) => {
@@ -46,6 +57,8 @@ export const ThemeContext = ({ children }) => {
         error,
         getPropertyById,
         getPropertiesByCity,
+        filteredProperties,
+        setFilteredProperties,
       }}
     >
       {children}
