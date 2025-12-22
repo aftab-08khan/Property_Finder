@@ -3,16 +3,15 @@ import { Menu } from "lucide-react";
 
 const TopHeader = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <header className="sticky top-0 z-50 bg-transparent backdrop-blur">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl font-bold text-emerald-600">
-              Propert<span className="text-gray-900">Finderr</span>
+              Propert<span className="text-gray-600">Finderr</span>
             </span>
           </Link>
 
-          
           <div className="flex items-center gap-3">
             <Link
               to="/contact"

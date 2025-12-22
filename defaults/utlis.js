@@ -8,3 +8,29 @@ export const cities = [
   "Fujairah",
   "Umm Al Quwain",
 ];
+export const quickFilter = [
+  "🏠 Apartments",
+  "🏡 Houses",
+  "💰 Under $300k",
+  "🏙️ City Center",
+  "🌳 With Garden",
+];
+
+export const status = [
+  {
+    value: "50k+",
+    type: "Properties",
+  },
+  {
+    value: "200+",
+    type: "Cities",
+  },
+  {
+    value: "15k+",
+    type: "Happy Customers",
+  },
+  {
+    value: "24/7",
+    type: "Support",
+  },
+];
