@@ -99,9 +99,7 @@ export default function Home() {
   return (
     <>
       <TopHeader />
-      <div className="relative h-[100vh]">
-        <div className="absolute inset-0 " />
-
+      <div className="relative h-full">
         <div className="relative z-10 flex flex-col justify-center">
           <div className="max-w-7xl px-4 py-12 md:py-16 mx-auto">
             <div className="text-center">
