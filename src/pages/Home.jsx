@@ -100,16 +100,6 @@ export default function Home() {
     <>
       <TopHeader />
       <div className="relative h-[100vh]">
-        {/* <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/bgvideo.mp4" type="video/mp4" />
-        </video> */}
-
         <div className="absolute inset-0 " />
 
         <div className="relative z-10 flex flex-col justify-center">
