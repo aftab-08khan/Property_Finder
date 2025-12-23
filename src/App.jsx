@@ -5,6 +5,8 @@ import SingleProfile from "./pages/SingleProfile";
 import { ThemeContext } from "../context/themeContext";
 import Footer from "./components/footer";
 import Contact from "./pages/Contact";
+import { BarCharts } from "./components/BarCharts";
+import Analysis from "./pages/Analysis";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<Home />} path="/" />
+          <Route element={<Analysis />} path="/analysis" />
+
           <Route element={<Contact />} path="/contact" />
 
           <Route path="/:city/:id" element={<SingleProfile />} />
