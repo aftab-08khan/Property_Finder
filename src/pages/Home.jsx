@@ -100,7 +100,7 @@ export default function Home() {
     <>
       <TopHeader />
       <div className="relative h-[100vh]">
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -108,18 +108,18 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/bgvideo.mp4" type="video/mp4" />
-        </video>
+        </video> */}
 
         <div className="absolute inset-0 " />
 
         <div className="relative z-10 flex flex-col justify-center">
           <div className="max-w-7xl px-4 py-12 md:py-16 mx-auto">
             <div className="text-center">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100 mb-4">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
                 Find Your <span className="text-green-400">Perfect</span> Home
               </h1>
 
-              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 Discover thousands of properties for sale and rent across the
                 country. Your dream property is just a search away.
               </p>
