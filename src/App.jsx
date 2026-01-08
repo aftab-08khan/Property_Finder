@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Contact from "./pages/Contact";
 import { BarCharts } from "./components/BarCharts";
 import Analysis from "./pages/Analysis";
+import PaymentPlanCalculator from "./pages/PaymentPlanCalculator";
 
 const App = () => {
   return (
@@ -17,6 +18,10 @@ const App = () => {
           <Route element={<Analysis />} path="/analysis" />
 
           <Route element={<Contact />} path="/contact" />
+          <Route
+            element={<PaymentPlanCalculator />}
+            path="/paymentPlanCalculator"
+          />
 
           <Route path="/:city/:id" element={<SingleProfile />} />
         </Routes>
