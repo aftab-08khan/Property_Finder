@@ -1,23 +1,14 @@
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import { Menu, X, Calculator, BarChart3 } from "lucide-react";
 import { useState } from "react";
 
 const TopHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-=======
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
-
-const TopHeader = () => {
-  const [isOpen, setIsOpen] = useState(false);
->>>>>>> 804695ed355229c7841c0c87e5f53b35092242c1
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          
           {/* Logo */}
           <Link
             to="/"
@@ -34,19 +25,11 @@ const TopHeader = () => {
             </div>
           </Link>
 
-<<<<<<< HEAD
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             <Link
               to="/analysis"
               className="inline-flex items-center gap-2 rounded-lg bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100 transition-colors border border-emerald-200"
-=======
-          {/* Desktop buttons */}
-          <div className="hidden md:flex items-center gap-4">
-            <Link
-              to="/analysis"
-              className="rounded-lg bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100 border border-emerald-200"
->>>>>>> 804695ed355229c7841c0c87e5f53b35092242c1
             >
               <BarChart3 className="h-4 w-4" />
               View Analysis
@@ -61,11 +44,7 @@ const TopHeader = () => {
             </Link>
             <Link
               to="/contact"
-<<<<<<< HEAD
               className="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors shadow-sm"
-=======
-              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 shadow-sm"
->>>>>>> 804695ed355229c7841c0c87e5f53b35092242c1
             >
               List Property
             </Link>
@@ -73,17 +52,10 @@ const TopHeader = () => {
 
           {/* Mobile menu button */}
           <button
-<<<<<<< HEAD
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
-=======
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
-          >
-            {isOpen ? (
->>>>>>> 804695ed355229c7841c0c87e5f53b35092242c1
               <X className="h-5 w-5 text-gray-600" />
             ) : (
               <Menu className="h-5 w-5 text-gray-600" />
@@ -91,7 +63,6 @@ const TopHeader = () => {
           </button>
         </div>
 
-<<<<<<< HEAD
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-gray-100 py-4 animate-in slide-in-from-top duration-200">
@@ -120,26 +91,6 @@ const TopHeader = () => {
                 List Property
               </Link>
             </div>
-=======
-        {/* Mobile menu */}
-        {isOpen && (
-          <div className="md:hidden mt-2 space-y-2 pb-4">
-            <Link
-              to="/analysis"
-              onClick={() => setIsOpen(false)}
-              className="block w-full rounded-lg bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 hover:bg-emerald-100"
-            >
-              View Analysis
-            </Link>
-
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="block w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700"
-            >
-              List Property
-            </Link>
->>>>>>> 804695ed355229c7841c0c87e5f53b35092242c1
           </div>
         )}
       </div>
@@ -148,4 +99,3 @@ const TopHeader = () => {
 };
 
 export default TopHeader;
-
