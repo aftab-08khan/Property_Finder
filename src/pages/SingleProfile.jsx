@@ -44,6 +44,9 @@ const SingleProfile = () => {
 
   const formattedPrice = `AED ${(price / 1_000_000).toFixed(2)}M`;
   const formattedRera = Math.trunc(rera);
+  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
+    displayAddress
+  )}&output=embed`;
 
   return (
     <ContentWrapper>
@@ -169,16 +172,35 @@ const SingleProfile = () => {
             </div>
           </div>
         </div>
-        {relatedProperties.length > 0 && (
-          <div className="w-full mb-20">
-            <h2 className="text-2xl font-semibold mb-6">
-              Similar properties in {city}
-            </h2>
+        {/* <div className="bg-white rounded-2xl p-4 shadow-sm border"> */}
+        <h2 className="text-xl font-semibold my-4 text-gray-900 mb-3">
+          Location on Map
+        </h2>
 
-            <CustomCarousel properties={relatedProperties} />
-          </div>
-        )}
+        <div className="w-full h-[400px] rounded-xl overflow-hidden border">
+          <iframe
+            src={mapSrc}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Property Location"
+          ></iframe>
+        </div>
       </div>
+
+      {relatedProperties.length > 0 && (
+        <div className="w-full mb-20 mt-4">
+          <h2 className="text-2xl font-semibold mb-6">
+            Similar properties in {city}
+          </h2>
+
+          <CustomCarousel properties={relatedProperties} />
+        </div>
+      )}
+      {/* </div> */}
     </ContentWrapper>
   );
 };
