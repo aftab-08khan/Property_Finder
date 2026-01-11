@@ -54,7 +54,6 @@ export default function PaymentPlanCalculator() {
           <ArrowLeft size={16} /> Back to listings
         </Link>
         <div className="max-w-6xl mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-10">
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -107,7 +106,6 @@ export default function PaymentPlanCalculator() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    {/* Property Price */}
                     <div className="space-y-2">
                       <Label className="text-gray-700 font-medium flex items-center gap-2">
                         <Home className="h-4 w-4" />
@@ -127,7 +125,6 @@ export default function PaymentPlanCalculator() {
                       </div>
                     </div>
 
-                    {/* Construction Period */}
                     <div className="space-y-2">
                       <Label className="text-gray-700 font-medium flex items-center gap-2">
                         <Calendar className="h-4 w-4" />
@@ -141,7 +138,6 @@ export default function PaymentPlanCalculator() {
                       />
                     </div>
 
-                    {/* Down Payment */}
                     <div className="space-y-2">
                       <Label className="text-gray-700 font-medium">
                         Down Payment ({down}%)
@@ -161,7 +157,6 @@ export default function PaymentPlanCalculator() {
                       </div>
                     </div>
 
-                    {/* During Construction */}
                     <div className="space-y-2">
                       <Label className="text-gray-700 font-medium">
                         During Construction ({construction}%)
@@ -181,7 +176,6 @@ export default function PaymentPlanCalculator() {
                       </div>
                     </div>
 
-                    {/* On Handover */}
                     <div className="space-y-2 md:col-span-2">
                       <Label className="text-gray-700 font-medium">
                         On Handover ({handover}%)
@@ -210,7 +204,6 @@ export default function PaymentPlanCalculator() {
               </Card>
             </div>
 
-            {/* Right Column - Results */}
             <div className="lg:col-span-1">
               <Card className="shadow-xl pt-0 border-emerald-200 sticky top-24">
                 <CardHeader className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-t-lg">
@@ -230,7 +223,6 @@ export default function PaymentPlanCalculator() {
                     </div>
                   </div>
 
-                  {/* Breakdown */}
                   <div className="space-y-4">
                     <ResultItem
                       label="Down Payment"
@@ -258,7 +250,6 @@ export default function PaymentPlanCalculator() {
                     />
                   </div>
 
-                  {/* Summary */}
                   <div className="border-t pt-4 space-y-3">
                     <div className="flex justify-between text-lg font-semibold">
                       <span className="text-gray-700">Total Payment</span>

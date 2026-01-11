@@ -66,7 +66,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Email */}
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
                 <Input
@@ -80,7 +79,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Message */}
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
@@ -94,7 +92,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Submit */}
               <Button
                 type="submit"
                 className="bg-green-700 hover:bg-green-600 w-full"

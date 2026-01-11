@@ -172,7 +172,6 @@ const SingleProfile = () => {
             </div>
           </div>
         </div>
-        {/* <div className="bg-white rounded-2xl p-4 shadow-sm border"> */}
         <h2 className="text-xl font-semibold my-4 text-gray-900 mb-3">
           Location on Map
         </h2>
@@ -200,7 +199,6 @@ const SingleProfile = () => {
           <CustomCarousel properties={relatedProperties} />
         </div>
       )}
-      {/* </div> */}
     </ContentWrapper>
   );
 };
