@@ -224,7 +224,6 @@ export default function Home() {
             {totalPages > 1 && (
               <div className="bg-white rounded-xl shadow-sm border p-4 sm:p-6">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                  {/* Responsive Info */}
                   <div className="text-gray-600 text-sm sm:text-base text-center sm:text-left">
                     <div>
                       Page <span className="font-semibold">{currentPage}</span>{" "}
